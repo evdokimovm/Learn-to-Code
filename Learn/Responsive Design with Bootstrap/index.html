@@ -18,7 +18,7 @@
 
   p {
     font-size: 16px;
-    font-family: Monospace;
+    /*font-family: Monospace;*/
   }
 
   .thick-green-border {
@@ -35,17 +35,25 @@
 
 <div class="container-fluid">
 
-	<h2 class="red-text text-center">CatPhotoApp</h2>
+	<h2 class="text-primary">CatPhotoApp</h2>
 
 	<p>Click here for <a href="#">cat photos</a>.</p>
 
-	<a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
+	<a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
 
 	<img class="img-responsive" src="http://bit.ly/fcc-running-cats">
 
-	<button class="btn btn-block btn-primary" type="submit">Like</button>
-	<button class="btn btn-block btn-info" type="submit">Info</button>
-	<button class="btn btn-block btn-danger">Delete</button>
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary">Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete</button>
+    </div>
+  </div>
 
 	<p>Things cats love:</p>
 	<ul>
