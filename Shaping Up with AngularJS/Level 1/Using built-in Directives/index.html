@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+	<title>Built-in Directives AngularJS</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body ng-controller="StoreController as store">
+	<div class="list-group">
+		<div class="list-group-item">
+			<h1> {{store.product[0].name}} </h1>
+			<h2> ${{store.product[0].price}} </h2>
+			<p> {{store.product[0].description}} </p>
+			<button ng-show="store.product[0].canPurchase"> Add to Cart </button> <!-- if canPurchase: true -->
+		</div>
+		<div class="list-group-item">
+			<h1> {{store.product[1].name}} </h1>
+			<h2> ${{store.product[1].price}} </h2>
+			<p> {{store.product[1].description}} </p>
+			<button ng-show="store.product[1].canPurchase"> Add to Cart </button>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
