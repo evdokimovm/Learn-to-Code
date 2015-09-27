@@ -1,0 +1,15 @@
+Recipe
+{{data | filter:options}}
+
+date
+{{'1388123412323' | date:'MM/dd/yyyy' @ h:mma'}} => 12/27/2013 @ 12:50 AM
+
+uppercase & lowercase
+{{'octagon gem' | uppercase}} => OCTAGON GEM
+
+limitTo
+{{'My Description' | limitTo:8}} => My Descr
+<li ng-repeat="product in store.products" | limitTo:3">
+
+orderBy // https://docs.angularjs.org/api/ng/filter/orderBy
+<li ng-repeat="product in store.products | orderBy:'-price'"
