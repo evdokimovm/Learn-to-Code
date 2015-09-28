@@ -5,13 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body ng-controller="Controller as store">
-<section>
+<section ng-init="tab = 1">
 	<ul class="nav nav-pills">
 		<li> <a href ng-click="tab = 1">Description</a> </li>
 		<li> <a href ng-click="tab = 2">Specifications</a> </li>
 		<li> <a href ng-click="tab = 3">Reviews</a> </li>
 	</ul>
-	{{tab}}
+	<!-- {{tab}} -->
 </section>
 
 <div class="panel" ng-show="tab === 1"> <!-- show the panel if tab is the right number -->
