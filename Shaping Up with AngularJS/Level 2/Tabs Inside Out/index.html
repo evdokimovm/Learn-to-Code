@@ -14,15 +14,15 @@
 	{{tab}}
 </section>
 
-<div class="panel">
+<div class="panel" ng-show="tab === 1"> <!-- show the panel if tab is the right number -->
 	<h4>Description</h4>
 	<p>{{product.description}}</p>
 </div>
-<div class="panel">
+<div class="panel" ng-show="tab === 2">
 	<h4>Specifications</h4>
 	<blockquote>None yet</blockquote>
 </div>
-<div class="panel">
+<div class="panel" ng-show="tab === 3">
 	<h4>Reviews</h4>
 	<blockquote>None yet</blockquote>
 </div>
