@@ -5,6 +5,10 @@
 		this.product = gem;
 	});
 
+	app.controller('PanelController', function(){
+		
+	});
+
 	var gem = [
 	{
 		name: 'Dodecahedron',
