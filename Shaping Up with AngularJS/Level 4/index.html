@@ -10,11 +10,13 @@
 <body ng-controller="Controller as store">
 <div class="container list-group-item" ng-repeat="product in store.products">
 <div ng-controller="PanelController as panel">
-<!-- 		<h3 ng-include="'header.html'">
+<!-- 		<h3 ng-include="'product-title.html'">
 			
 		</h3> -->
 
-		<h3><product-title></product-title></h3>
+		<!-- <h3><product-title></product-title></h3> -->
+
+		<h3 product-title></h3>
 
 		<div class="gallery">
 		<!-- <div class="img-wrap">
