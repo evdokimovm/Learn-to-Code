@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="Controller as store">
+<div class="container list-group-item" ng-repeat="product in store.products">
+<div ng-controller="PanelController as panel">
+<!-- 		<h3 ng-include="'product-title.html'">
+			
+		</h3> -->
+
+		<!-- <h3><product-title></product-title></h3> -->
+
+		<h3 product-title></h3>
+
+		<product-gallery></product-gallery>
+
+		<product-panels></product-panels>
+
+		<product-panels1></product-panels1>
+		
+</div>
+</div>
+</body>
+</html>
