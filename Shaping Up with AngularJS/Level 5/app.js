@@ -1,5 +1,5 @@
 (function() {
-	var app = angular.module('store', []);
+	var app = angular.module('store', ['store-products']);
 
 	app.controller('Controller', function(){
 		this.products = gem;
@@ -23,35 +23,6 @@
 		this.addReview = function(product) {
 			product.reviews.push(this.review);
 			this.review = {};
-		};
-	});
-
-	app.directive('productTitle', function(){
-		return {
-			// restrict: 'E',
-			restrict: 'A',
-			templateUrl: 'product-title.html'
-		};
-	});
-
-	app.directive('productPanels', function(){
-		return {
-			restrict: 'E',
-			templateUrl: 'product-panels.html'
-		};
-	});
-
-	app.directive('productGallery', function(){
-		return {
-			restrict: 'E',
-			templateUrl: 'product-gallery.html'
-		};
-	});
-
-	app.directive('productPanels1', function(){
-		return {
-			restrict: 'E',
-			templateUrl: 'product-panels1.html'
 		};
 	});
 	
